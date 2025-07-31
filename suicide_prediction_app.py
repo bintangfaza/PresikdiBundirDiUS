@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 
 st.title("Prediksi Angka Kematian Bunuh Diri di AS Berdasarkan Demografi")
-
+# baca preprocessed data
 df = pd.read_csv("preprocessed_suicide_rates.csv")
 
 df['year_diff'] = df['year'] - df['year'].min()
